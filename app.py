@@ -7,7 +7,7 @@ from applications.database import db
 app= None
 
 def setup():
-	app= Flask(__name__, template_folder="D:/lab assignment 5/templates")
+	app= Flask(__name__)
 	app.config.from_object(developers)
 	db.init_app(app)
 	app.app_context().push()
